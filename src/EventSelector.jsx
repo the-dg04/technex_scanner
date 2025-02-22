@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function EventSelector() {
-  const [selectedValue, setSelectedValue] = useState("Robowars");
+  const [selectedValue, setSelectedValue] = useState("DroneTech");
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
@@ -10,7 +10,42 @@ export default function EventSelector() {
     navigate(`/scan/${selectedValue}`);
   };
 
-  const options = ["Robowars", "DroneTech", "Axelerate","Pokermania","CogniQuest"];
+  const options = [
+    "DroneTech",
+    "AeroVerse",
+    "SkyGlide",
+    "International Coding Marathon",
+    "Capture the Flag",
+    "Hack it out",
+    "1 Billion row challenge",
+    "Axelerate",
+    "Cadastrophe",
+    "Robo Soccer",
+    "SIMUSOLVE CHALLENGE",
+    "Fake investors",
+    "Climate buzzer",
+    "Eureka",
+    "Eco hackathon",
+    "AlgoZen",
+    "CogniQuest",
+    "Pokermania",
+    "CryptoRush",
+    "IOmatic",
+    "Soft-corner",
+    "Terravate",
+    "Consultathon",
+    "Prodonosis",
+    "Technalatics",
+    "Capital Quest",
+    "Robowars",
+    "Micromouse",
+    "Botstacle Challenge",
+    "Mazex",
+    "Scientists of Utopia",
+    "Solid-Boost",
+    "Stellar Analytics",
+    "Astro-Quiz",
+  ];
 
   return (
     <div className="w-screen h-screen flex flex-col justify-center items-center relative">
