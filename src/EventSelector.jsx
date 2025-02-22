@@ -10,7 +10,7 @@ export default function EventSelector() {
     navigate(`/scan/${selectedValue}`);
   };
 
-  const options = ["Robowars", "DroneTech", "Axelerate","Pokermania"];
+  const options = ["Robowars", "DroneTech", "Axelerate","Pokermania","CogniQuest"];
 
   return (
     <div className="w-screen h-screen flex flex-col justify-center items-center relative">
